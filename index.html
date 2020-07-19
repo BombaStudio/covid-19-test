@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid 19 Test</title>
+	<style type="text/css">
+		#back {
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+		}
+		.start {
+			z-index: 1;
+			position: absolute;
+			width: 50%;
+			height: 50%;
+			top: 25%;
+			left: 25%;
+			background-color: rgba(255,255,255,0.5);
+			box-shadow: rgba(0, 0, 0, 0.75) 0px 10px 75px 8px inset;
+			border-radius: 50px;
+		}
+		.start button {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top: calc(75% - 50px);
+			left: calc(50% - 50px);
+			border-radius: 50%;
+			border: none;
+			background-color: rgba(255,0,0,1);
+			font-size: 200%;
+			color: #fff;
+			font-family: 'Comic Sans MS';
+			font-style: italic;
+		}
+		.start button : hover {
+
+		}
+		.start button div {
+			width: 25%;
+			height: 25%;
+			background-color: rgba(255,0,0,1);
+			border-radius: 50%;
+		}
+		.d1 {
+			position: absolute;
+			top: -25%;
+			left: 37.5%;
+		}
+		.d2 {
+			position: absolute;
+			top: 0%;
+			left: 87.5%;
+		}
+		.d3 {
+			position: absolute;
+			top: 37.5%;
+			left: 100%;
+		}
+		.d4 {
+			position: absolute;
+			top: 75%;
+			left: 87.5%;
+		}
+		.d5 {
+			position: absolute;
+			top: 100%;
+			left: 37.5%;
+		}
+		.d6 {
+			position: absolute;
+			top: 75%;
+			left: -12.5%;
+		}
+		.d7 {
+			position: absolute;
+			top: 37.5%;
+			left: -25%;
+		}
+		.d8 {
+			position: absolute;
+			top: 0%;
+			left: -12.5%;
+		}
+		.start h2 {
+			position: absolute;
+			left: 0%;
+			top: 6.25%;
+			width: 100%;
+			text-align: center;
+			font-size: 48px;
+			color: #ff0000;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+</head>
+<body>
+	<img src="cvd.png" id="back">
+	<div class="start">
+		<h2>Covid19 Testi</h2>
+		<button id="startbutton" onclick="window.location.replace('./exam.html');">
+			<script type="text/javascript">
+				var button = document.getElementById("startbutton");
+				for(var i = 1; i <= 8; i++){
+					button.innerHTML += '<div class="d'+i.toString()+'""></div>';
+				}
+			</script>
+			Başla
+		</button>
+	</div>
+</body>
+</html>
